@@ -17,3 +17,7 @@ pip install -r requirements.txt
 **run python file**
 
 app.py
+
+**postman collection API**
+
+https://api.postman.com/collections/25398901-3c67e105-01c8-4adf-b0d8-5323295d14e6?access_key=PMAT-01JBW1JN7D18F17QGWEF5T90BX
