@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "3c67e105-01c8-4adf-b0d8-5323295d14e6",
+		"name": "wallet_system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25398901"
+	},
+	"item": [
+		{
+			"name": "balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:777/balance/1"
+			},
+			"response": []
+		},
+		{
+			"name": "cash-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":0.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:777/cash-in/1"
+			},
+			"response": []
+		},
+		{
+			"name": "debit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":2.4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:777/debit/1"
+			},
+			"response": []
+		}
+	]
+}
