@@ -1,14 +1,14 @@
-# Create a virtual environment
+**Create a virtual environment**
 python -m venv venv  
 
-# Activate the virtual environment (Linux/Mac)
+ **Activate the virtual environment (Linux/Mac)**
 source venv/bin/activate 
  
-# Activate the virtual environment (Windows)
+**Activate the virtual environment (Windows)**
 venv\Scripts\activate
 
-# Install the required libraries
+**Install the required libraries**
 pip install -r requirements.txt
 
-# run python file
+**run python file**
 app.py
