@@ -14,10 +14,18 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 
-**run python file**
+**Insert balance in sqlalchemy**
 
+from app import app
+from models import Wallet
+from database import db
+
+with app.app_context():
+    db.session.add(Wallet(current_balance=100.00))
+    db.session.commit()
+
+
+**run python file**
 app.py
 
-**postman collection API**
 
-https://api.postman.com/collections/25398901-dad9e2e4-9414-4b32-ba5c-79570026ec71?access_key=PMAT-01JBW1ZST7VX8BXS8XS1E3E5GG
