@@ -4,17 +4,12 @@ from database import db, init_db
 from decimal import Decimal, InvalidOperation
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///wallet.db'  # Alternatively, import from config.py
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///wallet.db'  
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Initialize the database
+
 init_db(app)
 
-@app.route('/get_logs', methods=['GET'])
-def get_drinks():
-    logs = Wallet_logs.query.all()
-    output = [{'timestamp': log.timestamp, 'action': log.action} for log in logs]
-    return jsonify({"data": output})
 
 def log_action(action):
     logs = Wallet_logs(action=action)

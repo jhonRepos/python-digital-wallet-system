@@ -8,7 +8,7 @@ class Wallet(db.Model):
     current_balance = db.Column(db.Numeric(10, 2), nullable=False, default=0.00)
 
     def __repr__(self):
-        return f"wallet balance: {self.current_balance}"
+        return f"id: {self.id} - wallet_balance : {self.current_balance} "
 
 class Wallet_logs(db.Model):
     __tablename__ = 'wallet_logs'  # Optional: Define your table name explicitly

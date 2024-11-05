@@ -14,7 +14,11 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 
-**Insert balance in sqlalchemy**
+**Database  sqlalchemy**
+
+step 1. terminal run "python"
+
+step 2. insert balance 
 
 from app import app
 from models import Wallet
@@ -24,8 +28,41 @@ with app.app_context():
     db.session.add(Wallet(current_balance=100.00))
     db.session.commit()
 
+step 3. show data 
+with app.app_context():
+    Wallet.query.all()
+
+current data
+**[id: 1 - wallet_balance : 100.00 ]**
 
 **run python file**
 app.py
+
+
+
+**Api endpoints**
+
+
+balance 
+
+url: {local}/balance/<id>
+
+cash in 
+
+url: {local}/cash-in/<id>
+
+payload (json-raw):
+{
+    "amount":100
+}
+
+debit
+
+url: {local}/debit/<id>
+
+payload (json-raw):
+{
+    "amount":100
+}
 
 
