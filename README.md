@@ -42,14 +42,13 @@ app.py
 
 **Api endpoints**
 
-
 balance 
 
-url: {local}/balance/<id>
+url: {local}/balance/{id}
 
 cash in 
 
-url: {local}/cash-in/<id>
+url: {local}/cash-in/{id}
 
 payload (json-raw):
 {
@@ -58,7 +57,7 @@ payload (json-raw):
 
 debit
 
-url: {local}/debit/<id>
+url: {local}/debit/{id}
 
 payload (json-raw):
 {
